@@ -1,29 +1,61 @@
-# 站点基本信息
+# =========================================================
+# 站点全局配置（Site Settings）
+# 这部分配置会被 Jekyll 和 Minima 主题直接读取
+# =========================================================
+
+# 博客网站的大标题（显示在浏览器标签页和页面顶部）
 title: Sunmile 的小天地
-description: 记录生活与技术的点滴
+
+# 博客的描述（主要用于 SEO 搜索优化和 RSS 订阅）
+description: 记录生活与技术的点滴，慢慢成长。
+
+# 博客的正式网址（非常重要，必须写全）
 url: "https://sunmilechen.github.io"
+
+# 基础路径（通常留空，除非你把博客放在子目录里，比如 /blog）
 baseurl: ""
 
-# 使用 Minima 主题（关键）
+# =========================================================
+# 主题设置（Theme Settings）
+# 关键：必须使用 theme，而不是 remote_theme
+# 否则下面的 minima 配置都不会生效！
+# =========================================================
+
+# 指定使用 Minima 主题
 theme: minima
 
-# Minima 自带 4 种皮肤，不用写 CSS，classic（默认），dark，auto（跟随系统亮暗模式），solarized-dark
+# =========================================================
+# Minima 专属配置（仅适用于 Minima v3 及以上）
+# 注意：这一块必须缩进，且位于 minima: 下面
+# =========================================================
+
 minima:
+  # ---------- 外观设置 ----------
+  # 主题皮肤：classic（默认）, dark, auto, solarized-light, solarized-dark
   skin: dark
 
-# 加社交链接（GitHub / 知乎 / Email）
-  minima:
-  social_links:
-    - platform: github
-      user_url: https://github.com/sunmilechen
-    - platform: email
-      user_url: mailto:sunmile@example.com
-
-# 显示文章摘要（推荐）
-minima:
+  # ---------- 内容设置 ----------
+  # 是否在首页显示文章的摘要（摘要由 <!--more--> 分割）
   show_excerpts: true
 
-# 必要插件（不要删）
+  # ---------- 社交链接（页脚显示） ----------
+  # 图标使用的是 Font Awesome 的免费图标
+  social_links:
+    # GitHub 链接
+    - platform: github
+      user_url: "https://github.com/sunmilechen"
+    
+    # 邮箱链接（建议使用 GitHub 的匿名邮箱）
+    - platform: email
+      user_url: "mailto:sunmilechen@users.noreply.github.com"
+
+# =========================================================
+# 插件配置（Plugins）
+# GitHub Pages 构建时必须启用的插件
+# =========================================================
+
 plugins:
+  # 生成 RSS 订阅源（feed.xml）
   - jekyll-feed
+  # 生成 SEO 优化标签（利于搜索引擎收录）
   - jekyll-seo-tag
