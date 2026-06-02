@@ -7,6 +7,18 @@ baseurl: ""
 # 使用 Minima 主题（关键）
 theme: minima
 
+# Minima 自带 4 种皮肤，不用写 CSS，classic（默认），dark，auto（跟随系统亮暗模式），solarized-dark
+minima:
+  skin: dark
+
+# 加社交链接（GitHub / 知乎 / Email）
+  minima:
+  social_links:
+    - platform: github
+      user_url: https://github.com/sunmilechen
+    - platform: email
+      user_url: mailto:sunmile@example.com
+
 # 显示文章摘要（推荐）
 minima:
   show_excerpts: true
