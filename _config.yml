@@ -1,0 +1,22 @@
+# 博客的标题（会在浏览器标签页显示）
+title: Sunmile 的小天地
+
+# 你的名字或昵称
+name: Sunmile
+
+# 博客简介（可选）
+description: 记录生活与编程的点滴
+
+# 网站网址（保持这个，别改）
+url: "https://sunmilechen.github.io"
+
+# 基础路径（保持空，别改）
+baseurl: ""
+
+# 使用的主题（必须写 minima）
+theme: minima
+
+# 防止生成多余的 sitemap 报错（新版本建议加上）
+exclude:
+  - Gemfile
+  - Gemfile.lock
